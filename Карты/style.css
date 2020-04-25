@@ -1,0 +1,62 @@
+body{
+position: relative;
+}
+
+.one{
+    width: 100px;
+    height: 200px;
+    background-color: #fed700;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.five.hover{
+    z-index: 6;
+}
+
+.two{
+    width: 100px;
+    height: 200px;
+    background-color: #fee4c3;
+    border: 1px solid black;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+
+.three{
+    width: 100px;
+    height: 200px;
+    background-color: #fea500;
+    border: 1px solid black;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.four{
+    width: 100px;
+    height: 200px;
+    background-color: #fe0000;
+    border: 1px solid black;
+    position: absolute;
+    top: 90px;
+    left: 90px;
+}
+
+.five{
+    width: 100px;
+    height: 200px;
+    background-color: #008001;
+    border: 1px solid black;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+}
