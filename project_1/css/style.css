@@ -132,18 +132,12 @@ details summary:before {
     justify-content: center;
 }
 
-.screenshots-grid {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .screenshots-grid__item {
     display: flex;
     margin: 0 15px 15px 0;
 }
 
 .screenshots-grid__img {
-    display: block;
     background-color: #445161;
     margin: 0 15px 0 0;
 }
