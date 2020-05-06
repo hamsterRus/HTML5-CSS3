@@ -1,13 +1,13 @@
 @import 'variables';
 
+@import 'fonts.scss';
+
 @import 'normalize';
 
 
 body{
     max-width: $width;
     margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Raleway', sans-serif;
 }
 
 @import 'header';
