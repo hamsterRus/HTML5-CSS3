@@ -235,7 +235,7 @@ figure:nth-child(4) {
 }
 
 
-.comment-text__user address{
+.comment-text__user{
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -299,6 +299,15 @@ figure:nth-child(4) {
     display: block;
     text-align: center;
     margin: 0 20px 20px 20px;
+    
+}
+
+.btn:hover{
+    box-shadow: 0 2px 5px 2px rgba(255, 254, 254, 0.35);
+}
+
+.btn:active{
+    box-shadow: none;
 }
 
 .buy-row-item__btn span{
@@ -308,6 +317,7 @@ figure:nth-child(4) {
     color: #445162;
     display: block;
     margin: 14px 0;
+    text-transform: uppercase;
 }
 
 .contacts{
@@ -445,10 +455,84 @@ figure:nth-child(4) {
     background-size: cover;
 }
 
+.contacts-link__link{
+    position: relative;
+    display: block;
+}
+
+.twiter::before{
+    content: "";
+    background-image: url(../img/icons/twiter.png);
+    top: 0;
+    left: 0;
+    width: 43px;
+    height: 42px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.facebook:before{
+    content: "";
+    background-image: url(../img/icons/facebook.png);
+    top: 0;
+    left: 50px;
+    width: 43px;
+    height: 42px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.in:before{
+    content: "";
+    background-image: url(../img/icons/in.png);
+    top: 0;
+    left: 100px;
+    width: 43px;
+    height: 42px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.google:before{
+    content: "";
+    background-image: url(../img/icons/google.png);
+    top: 0;
+    left: 150px;
+    width: 43px;
+    height: 42px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.youtube:before{
+    content: "";
+    background-image: url(../img/icons/youtube.png);
+    top: 0;
+    left: 200px;
+    width: 43px;
+    height: 42px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .link-white {
     color: #fff;
     font-size: 16px;
+}
+
+.link-white:hover{
+    color: #333333;
+
+}
+
+.link-white:active{
+    color: #fff;
 }
 
 .footer{
