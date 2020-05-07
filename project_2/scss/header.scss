@@ -4,9 +4,9 @@
 .header {
     background-image: url(../img/bg_header.jpg);
     background-repeat: no-repeat;
-    padding: 50px 0;
+    padding: 40px 0;
     margin: 0 auto;
-    height: 100%;
+    background-clip: border-box;
 
     &-header {
         display: flex;
@@ -14,8 +14,41 @@
         justify-content: space-between;
     }
 
+    &-logo {
+        &__link {
+            font-family: raleway;
+            font-size: 34px;
+            color: $colorWhite;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                color: $colorGold;
+            }
+
+            &:active {
+                color: $colorWhite;
+            }
+        }
+
+        &__svg {
+            fill: $colorWhite;
+        }
+
+        &:hover .header-logo__svg {
+            fill: $colorGold;
+        }
+
+        &:active .header-logo__svg {
+            fill: $colorWhite;
+        }
+
+    }
+
     &-menu {
         margin: auto 0;
+        display: flex;
 
         &__menu-list {
             display: flex;
@@ -29,23 +62,23 @@
         }
 
         &__menu-link {
-            font-family: Montserrat;
+            font-family: montserrat;
             font-size: 14px;
             font-weight: 300;
             text-align: left;
-            color: #ffffff;
+            color: $colorWhite;
             text-decoration: none;
 
             &--active {
-                color: #c7b299;
+                color: $colorGold;
             }
 
             &:hover {
-                color: #c7b299;
+                color: $colorGold;
             }
 
             &:active {
-                color: #ffffff;
+                color: $colorWhite;
             }
         }
     }
@@ -57,26 +90,38 @@
 
         &-arrows-left {
             align-self: center;
+            .arrow__left{
+                fill: $colorWhite;
+                &:hover{
+                    fill: $colorGold;
+                }
+                &:active{
+                    fill: $colorWhite;
+                }
+            }
         }
 
         &-content {
-            font-family: Raleway;
+            font-family: raleway, sans-serif;
             text-align: center;
-            color: #ffffff;
+            color: $colorWhite;
 
             &__subtitle {
+                display: block;
                 font-size: 36px;
                 font-weight: 500;
                 margin: 0;
             }
 
             &__title {
+                display: block;
                 font-size: 52px;
-                font-weight: 800;
+                font-weight: 700;
                 margin: 9px 0 10px 0;
             }
 
             &__text {
+                display: block;
                 font-size: 16px;
                 font-weight: 300;
                 line-height: 1.5;
@@ -93,14 +138,15 @@
                 box-shadow: inset 0px -3px 0 0 #736357;
                 background-color: #998675;
                 text-decoration: none;
-                &:hover{
-                    background-color: #736357; 
+
+                &:hover {
+                    background-color: #736357;
                 }
-                &:active{
+
+                &:active {
                     box-shadow: none;
                     background-color: #998675;
                 }
-                
             }
 
             &__btn-text {
@@ -109,36 +155,47 @@
                 line-height: 1.64;
                 text-align: center;
                 text-transform: uppercase;
-                color: #ffffff;
-                font-family: Raleway;
+                color: $colorWhite;
+                font-family: raleway;
             }
-            
+
         }
 
         &-arrows-right {
             align-self: center;
+            .arrow__right{
+                fill: $colorWhite;
+                &:hover{
+                    fill: $colorGold;
+                }
+                &:active{
+                    fill: $colorWhite;
+                }
+            }
         }
     }
-    &-pagination{
+
+    &-pagination {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        &__link{
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 100px;
+
+        &__link {
             background-color: #fff;
             opacity: 0.5;
             border-radius: 50%;
-            width: 11px;
-            height: 11px;
-            margin: 0 9px 0 0;
-            &--active{
-                border: solid 2px #d3c1ad;
-                background-color: unset;
+            width: 7px;
+            height: 7px;
+            display: block;
+            border: 2px solid transparent;
+            &:hover {
+                border: 2px solid #d3c1ad;
+                background-color: transparent;
+                transform: scale(1.5);
             }
-            &:hover{
-                border: solid 2px #d3c1ad;
-                background-color: unset;
-            }
-            &:active{
+
+            &:active {
                 border: none;
                 background-color: #fff;
             }
@@ -146,39 +203,56 @@
     }
 }
 
-
-.icon {
-    &-cart {
+.icon-cart {
+    &__btn {
+        padding: 0;
+        height: 0;
+        border: none;
+        outline: none;
         display: block;
-        position: relative;
-        margin: 0 15px 0 33px;
+        margin: 0 14px 0 48px;
+    }
 
-        &::before {
-            content: '';
-            position: absolute;
-            background-image: url(../img/icon/icon-cart.png);
-            width: 24px;
-            height: 24px;
-            background-repeat: no-repeat;
-            top: -4px;
-            left: 0;
+    &__svg {
+        fill: $colorWhite;
+
+        &:hover {
+            fill: $colorGold;
+        }
+
+        &:active {
+            fill: $colorWhite;
         }
     }
 
-    &-search {
-        display: block;
-        position: relative;
-        margin: 0;
+}
 
-        &::before {
-            content: '';
-            position: absolute;
-            background-image: url(../img/icon/icon-search.png);
-            width: 24px;
-            height: 24px;
-            background-repeat: no-repeat;
-            top: -4px;
-            left: 0;
+.icon-search {
+    display: flex;
+
+    &__btn {
+        width: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        margin: 0 0 0 15px;
+        display: block;
+
+        &:focus {
+            display: block;
+            width: 100px;
+            transition: width 1s ease-in;
+            + .icon-search__svg{
+                margin: 0 0 0 -24px;
+                fill: $colorGold;
+            }
         }
     }
+    &__svg{
+        fill: $colorWhite;
+        &:hover{
+            fill: $colorGold;
+        }
+    }
+
 }
