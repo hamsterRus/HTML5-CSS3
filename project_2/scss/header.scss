@@ -10,7 +10,7 @@
 
     &-header {
         display: flex;
-        @include conteiner;
+        @include container;
         justify-content: space-between;
     }
 
@@ -130,34 +130,10 @@
             }
 
             &__btn {
+                @include btn;
                 margin: 50px 0 0 0;
-                display: inline-block;
-                box-sizing: border-box;
-                padding: 15px 39px;
-                border-radius: 3px;
-                box-shadow: inset 0px -3px 0 0 #736357;
-                background-color: #998675;
-                text-decoration: none;
-
-                &:hover {
-                    background-color: #736357;
-                }
-
-                &:active {
-                    box-shadow: none;
-                    background-color: #998675;
-                }
             }
-
-            &__btn-text {
-                font-size: 14px;
-                font-weight: 800;
-                line-height: 1.64;
-                text-align: center;
-                text-transform: uppercase;
-                color: $colorWhite;
-                font-family: raleway;
-            }
+            
 
         }
 
