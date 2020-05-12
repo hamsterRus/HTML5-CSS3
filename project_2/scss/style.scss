@@ -1,6 +1,6 @@
 @import 'variables';
 
-@import 'fonts.scss';
+@import 'fonts';
 
 @import 'normalize';
 
@@ -11,3 +11,10 @@ body{
 }
 
 @import 'header';
+
+@import 'services';
+
+@import 'ideas';
+
+@import 'boxes';
+

@@ -1,6 +1,35 @@
-
-
-@mixin conteiner {
+@mixin container {
     margin: 0 auto;
     max-width: $widthContainer;
+}
+
+@mixin btn{
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 15px 39px;
+        border-radius: 3px;
+        box-shadow: inset 0px -3px 0 0 #736357;
+        background-color: #998675;
+        text-decoration: none;
+        border: none;
+        outline: none;
+    
+        &:hover {
+            background-color: #736357;
+        }
+    
+        &:active {
+            box-shadow: none;
+            background-color: #998675;
+        }
+        &-text {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1.64;
+            text-align: center;
+            text-transform: uppercase;
+            color: $colorWhite;
+            font-family: raleway;
+        }
+    
 }
