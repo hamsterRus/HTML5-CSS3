@@ -9,6 +9,10 @@ body{
     max-width: $width;
     margin: 0 auto;
 }
+/*Убрать полосу прокрутки для всей страницы*/
+::-webkit-scrollbar {
+    width: 0;
+  }
 
 @import 'header';
 
