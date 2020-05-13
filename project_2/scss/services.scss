@@ -13,6 +13,9 @@
         align-items: center;
         text-decoration: none;
         margin: 0 25px 0 0 ;
+        &:nth-child(4){
+            margin: 0;
+        }
         &__svg{
             fill: #555555;
             display: block;
@@ -41,7 +44,7 @@
                 height: 3px;
                 background-color: #f1eee9;
                 align-self: flex-end;
-                margin: 30px auto 0;
+                margin: 22px auto 0;
             }
         }
         &:nth-child(1):hover .services-item__svg{
