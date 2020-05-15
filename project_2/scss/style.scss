@@ -9,6 +9,10 @@ body{
     max-width: $width;
     margin: 0 auto;
 }
+/*Убрать полосу прокрутки для всей страницы*/
+::-webkit-scrollbar {
+    width: 0;
+  }
 
 @import 'header';
 
@@ -17,4 +21,10 @@ body{
 @import 'ideas';
 
 @import 'boxes';
+
+@import 'project';
+
+@import 'video';
+
+@import 'mobile-devices';
 

@@ -1,0 +1,163 @@
+@import 'variables';
+@import 'mixins';
+
+.project{
+    &-container{
+        @include container;
+        padding: 80px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        display: block;
+        font-family: raleway;
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        color: #555555;
+        margin: 0;
+    }
+    &__subtitle{
+        display: block;
+        max-width: 770px;
+        font-family: montserrat;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.75;
+        text-align: center;
+        color: #8c8c8c;
+        margin: 16px 0;
+    }
+    &-categories{
+        display: flex;
+        margin: 17px 0 0 0;
+        &__btn{
+            display: block;
+            outline: none;
+            margin: 0 6px;
+            height: 32px;
+            border-radius: 3px;
+            border: solid 1px #ebebeb;
+            background-color: #ffffff;
+            padding: 8px 22px 10px;
+            &:hover{
+                background-color: #998675;
+                .project-categories__btn-text{
+                    color: #ffffff;
+                }
+                
+            }
+            &:active{
+                background-color: #ffffff;
+                .project-categories__btn-text{
+                    color: #8c8c8c;
+                }
+                
+            }
+        }
+        &__btn-text{
+            display: block;
+            margin: 0;
+            font-family: montserrat;
+            font-size: 14px;
+            font-weight: 300;
+            color: #8c8c8c;
+        }
+    }
+    &-items{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px 0 5px 0;
+        &-item{
+            margin: 0 30px 30px 0;
+            position: relative;
+            &:nth-child(3){
+                margin: 0 0 30px 0;
+            }
+            &:nth-child(6){
+                margin: 0;
+            }
+            &__img{
+                display: block;
+            }
+            &__txt{
+                background-color: #fbfaf8;
+                padding: 26px 0 8px 28px;
+                position: relative;
+                &-title{
+                    text-decoration: none;
+                    font-family: raleway;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #c7b299;
+                }
+                &-description{
+                    font-family: montserrat;
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #d1d1d1;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: -40px;
+                    left: 4px;
+                    border: 30px solid transparent; 
+                    border-bottom: 15px solid #fbfaf8;
+                }
+            }
+            &__btn{
+                display: none;
+                outline: none;
+                border: none;
+                background-color: transparent;
+                position: absolute;
+                top: 106px;
+                left: 144px;
+                &--search{
+                    margin: 0 0 0 50px;
+                }
+            }
+            &:hover{
+                .project-items-item__img{
+                    filter: brightness(60%);
+                }
+                .project-items-item__txt{
+                    background-color: #362f2d;
+                    &::before{
+                        border-bottom: 15px solid #362f2d;
+                    }
+                }
+                .project-items-item__txt-title{
+                    color: #ffffff;
+                    &:hover{
+                        color: $colorGold;
+                    }
+                    &:active{
+                        color: $colorWhite;
+                    }
+                }
+                .project-items-item__txt-subtitle{
+                    color: #c7b299;
+                }
+                .project-items-item__btn{
+                    display: flex;
+                }
+                .project-items-item__btn-svg{
+                    fill: $colorWhite;
+                    &:hover{
+                        fill: $colorGold;
+                    }
+                    &:active{
+                        fill: $colorWhite;
+                    }
+                }
+            }
+        }
+    }
+    &__btn{
+        @include btn;
+        padding: 12px 45px;
+    }
+}

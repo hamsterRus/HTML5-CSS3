@@ -3,7 +3,7 @@
 
 .boxes{
     background-image: linear-gradient(to top, #211b19, #4e3427);
-    padding: 48px 0;
+    padding: 43px 0;
     &-container{
         @include container;
         display: flex;
@@ -21,7 +21,7 @@
                 font-family: raleway;
                 font-size: 28px;
                 color: $colorWhite;
-                margin: 0 4px 0 0;
+                margin: 0 8px 0 0;
                 &.active{
                     color: $colorGold;
                 }
@@ -38,8 +38,9 @@
     &-btn{
         &__btn{
             @include btn;
-            margin: 0;
-            
+            margin: 5px 0;
+            padding: 8px 28px;
+        
         }
     }
 }

@@ -3,6 +3,7 @@
 
 .header {
     background-image: url(../img/bg_header.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     padding: 40px 0;
     margin: 0 auto;
@@ -81,6 +82,9 @@
                 color: $colorWhite;
             }
         }
+        &__form{
+            position: relative;
+        }
     }
 
     &-slider {
@@ -131,7 +135,7 @@
 
             &__btn {
                 @include btn;
-                margin: 50px 0 0 0;
+                margin: 48px 0 0 0;
             }
             
 
@@ -186,7 +190,7 @@
         border: none;
         outline: none;
         display: block;
-        margin: 0 14px 0 48px;
+        margin: 0 24px 0 48px;
     }
 
     &__svg {
@@ -204,27 +208,36 @@
 }
 
 .icon-search {
-    display: flex;
+    display: block;
+    width: 100%;
+    height: 100%;
 
     &__btn {
         width: 0;
-        padding: 0;
+
+        padding: 5px;
         border: none;
         outline: none;
         margin: 0 0 0 15px;
-        display: block;
+        position: absolute;
+        top: 40px;
+        left: -145px;
+        box-sizing: border-box;
+        background-color: transparent;
 
         &:focus {
-            display: block;
-            width: 100px;
+            border: 2px solid $colorWhite;
+            background-color: $colorWhite;
+            width: 150px;
             transition: width 1s ease-in;
             + .icon-search__svg{
-                margin: 0 0 0 -24px;
                 fill: $colorGold;
             }
         }
     }
     &__svg{
+        width: 100%;
+        height: 100%;
         fill: $colorWhite;
         &:hover{
             fill: $colorGold;

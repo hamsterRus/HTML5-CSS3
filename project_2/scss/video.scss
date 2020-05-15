@@ -1,0 +1,59 @@
+@import 'variables';
+@import 'mixins';
+
+.video{
+    position: relative;
+    &-bg{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    &-description{
+        position: absolute;
+        top: 210px;
+        left: 677px;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        &__play-btn{
+            outline: none;
+                border-radius: 50%;
+                background-color: rgba(0, 0, 0, 0.2);
+                width: 100px;
+                height: 100px;
+                border: none;
+                padding: 0;
+                margin: 0 0 40px 0;
+        }
+        &__play-svg{
+            fill: #ffffff;
+            display: block;
+            margin: 0 auto;
+        }
+        &__title{
+            display: block;
+            font-family: raleway;
+            font-size: 30px;
+            font-weight: 500;
+            color: #ffffff;
+            margin: 0 0 16px 0;
+        }
+        &__subtitle{
+            max-width: 570px;
+            font-family: montserrat;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.75;
+            text-align: center;
+            color: #ffffff;
+            margin: 0 0 29px 0;
+        }
+        &__play-time{
+            font-family: montserrat;
+            font-size: 14px;
+            line-height: 1.71;
+            color: #c7b299;
+            margin: 0;
+        }
+    }
+}
