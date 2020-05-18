@@ -28,12 +28,24 @@
                 padding-right: 9px;
                 margin-right: 6px;
             }
+            &:hover{
+                color: $colorGold;
+            }
+            &:active{
+                color: #959595;
+            }
         }
         &--grey{
             margin-left: 10px;
             border-left: 1px solid #252525;
             padding-left: 9px;
             color: #555555;
+            &:hover{
+                color: $colorGold;
+            }
+            &:active{
+                color: #555555;
+            }
         }
     }
 }

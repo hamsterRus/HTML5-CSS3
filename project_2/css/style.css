@@ -1543,10 +1543,18 @@ body {
         border-right: 1px solid #252525;
         padding-right: 9px;
         margin-right: 6px; }
+      .footer-copyright__link--white:hover {
+        color: #c7b299; }
+      .footer-copyright__link--white:active {
+        color: #959595; }
     .footer-copyright__link--grey {
       margin-left: 10px;
       border-left: 1px solid #252525;
       padding-left: 9px;
       color: #555555; }
+      .footer-copyright__link--grey:hover {
+        color: #c7b299; }
+      .footer-copyright__link--grey:active {
+        color: #555555; }
 
 /*# sourceMappingURL=style.css.map */
