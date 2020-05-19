@@ -5,10 +5,11 @@
     background-image: url(../img/bg_header.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-size: cover; 
     padding: 40px 0;
     margin: 0 auto;
-    background-clip: border-box;
-
+    background-origin: content-box;
     &-header {
         display: flex;
         @include container;
@@ -66,7 +67,7 @@
             font-family: montserrat;
             font-size: 14px;
             font-weight: 300;
-            text-align: left;
+            line-height: 2;
             color: $colorWhite;
             text-decoration: none;
 
@@ -88,7 +89,7 @@
     }
 
     &-slider {
-        margin: 278px 150px 325px 150px;
+        margin: 278px 150px 329px 150px;
         display: flex;
         justify-content: space-between;
 
@@ -120,7 +121,7 @@
             &__title {
                 display: block;
                 font-size: 52px;
-                font-weight: 700;
+                font-weight: 800;
                 margin: 9px 0 10px 0;
             }
 

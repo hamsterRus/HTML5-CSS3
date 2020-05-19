@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'mixins';
+
+.partners{
+    background-image: url(../img/partners-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-size: cover; 
+    &-container{
+        @include container;
+        padding: 140px 30px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}

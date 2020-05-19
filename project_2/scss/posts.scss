@@ -1,0 +1,167 @@
+@import 'variables';
+@import 'mixins';
+
+
+.posts{
+
+    &-container{
+        @include container;
+        padding: 76px;
+    }
+    &__title{
+        display: block;
+        font-family: raleway;
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        color: #555555;
+        margin: 0;
+    }
+    &__subtitle{
+        display: block;
+        max-width: 770px;
+        font-family: montserrat;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.75;
+        text-align: center;
+        color: #8c8c8c;
+        margin: 16px auto 34px;
+    }
+    &-post{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &__item{
+            max-width: $widthContainer / 3 - 20px;
+            box-sizing: border-box;
+            position: relative;
+            &:nth-child(2){
+                margin: 0 30px;
+            }
+            &-img{
+                display: block;
+            }
+            &-text{
+                box-sizing: border-box;
+                padding: 27px 40px 28px 28px;
+                &-title{
+                    font-family: raleway;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #555555;
+                    margin: 0;
+                }
+                &-subtitle{
+                    font-family: montserrat;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 1.57;
+                    color: #8c8c8c;
+                    margin: 15px 0 21px 0;
+                }
+                &-link{
+                    position: relative;
+                    text-decoration: none;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 1.43;
+                    color: #c7b299;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        border: 4px solid transparent; 
+                        border-left: 5px solid #c7b299;
+                        top: 3px;
+                        right: -19px;
+                    }
+                }
+               
+            }
+            &-date{
+                position: absolute;
+                top: 20px;
+                left: 21px;
+                &-day{
+                    width: 50px;
+                    height: 35px;
+                    display: block;
+                    font-family: montserrat;
+                    font-size: 24px;
+                    font-weight: 300;
+                    line-height: 35px;
+                    text-align: center;
+                    color: $colorWhite;
+                    background-color: #363636;
+                    border-top-left-radius: 4px;
+                    border-top-right-radius: 4px;
+                }
+                &-month{
+                    width: 50px;
+                    height: 25px;
+                    display: block;
+                    font-family: roboto;
+                    font-size: 12px;
+                    line-height: 25px;
+                    text-align: center;
+                    color: $colorWhite;
+                    background-color: #252525;
+                    border-bottom-left-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                }
+            }
+            &:hover{
+                .posts-post__item-img{
+                    filter: brightness(50%);
+                }
+                .posts-post__item-text{
+                    background-color: #362f2d;
+                }
+                .posts-post__item-text-title{
+                    color: $colorGold;
+                }
+                .posts-post__item-text-subtitle{
+                    color: $colorWhite;
+                }
+                .posts-post__item-date-day{
+                    background-color: #c7b299;
+                }
+                .posts-post__item-date-month{
+                    background-color: #a48d72;
+                }
+                .posts-post__item-text-link:hover{
+                    color: $colorWhite;
+                    &::after{
+                        border-left: 5px solid $colorWhite;
+                    }
+                }
+                .posts-post__item-text-link:active{
+                    color: $colorGold;
+                    &::after{
+                        border-left: 5px solid $colorGold;
+                    }
+                }
+                
+            }
+            
+        }
+        &__btn{
+            margin: 40px 4px 0 4px;
+            outline: none;
+            border: none;
+            padding: 0;
+            background-color: transparent;
+            &-svg{
+                fill: #d1d1d1;
+                &:hover{
+                    fill: $colorGold;
+                }
+                &:active{
+                    fill: #d1d1d1; 
+                }
+            }
+        }
+    }
+}

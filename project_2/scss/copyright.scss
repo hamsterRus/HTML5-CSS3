@@ -1,0 +1,51 @@
+@import 'variables';
+@import 'mixins';
+
+.footer-copyright{
+    background-color: #111111;
+    &-container{
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        padding: 39px 0 39px 0 ;
+        box-sizing: border-box;
+    }
+    &__text{
+        font-family: montserrat;
+        font-size: 13px;
+        font-weight: 300;
+        color: #555555;
+    }
+    &__link{
+        text-decoration: none;
+        font-family: montserrat;
+        font-size: 13px;
+        font-weight: 300;
+        &--white{
+            color: #959595;
+            &-right{
+                border-right: 1px solid #252525;
+                padding-right: 9px;
+                margin-right: 6px;
+            }
+            &:hover{
+                color: $colorGold;
+            }
+            &:active{
+                color: #959595;
+            }
+        }
+        &--grey{
+            margin-left: 10px;
+            border-left: 1px solid #252525;
+            padding-left: 9px;
+            color: #555555;
+            &:hover{
+                color: $colorGold;
+            }
+            &:active{
+                color: #555555;
+            }
+        }
+    }
+}
