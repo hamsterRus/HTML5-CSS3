@@ -23,6 +23,16 @@
                 </a>
             </div>
             <nav class="header-menu">
+                <input type="checkbox" id="menu" class="header-menu__checkbox visually-hidden">
+                <label  class="header-menu__label" for="menu">
+                    <div class="header-menu-hamburger">
+                        <span class="header-menu-hamburger__bar header-menu-hamburger--bar1"></span>
+                        <span class="header-menu-hamburger__bar header-menu-hamburger--bar2"></span>
+                        <span class="header-menu-hamburger__bar header-menu-hamburger--bar3"></span>
+                        <span class="header-menu-hamburger__bar header-menu-hamburger--bar4"></span>
+                    </div>
+                </label>
+        
                 <ul class="header-menu__menu-list">
                     <li class="header-menu__menu-item">
                         <a href="#" class="header-menu__menu-link">Home</a>
@@ -49,7 +59,7 @@
                         <a href="#" class="header-menu__menu-link">Contact</a>
                     </li>
                 </ul>
-                <button type="button" class="icon-cart__btn">
+                <button type="button" class="header-menu__icon icon-cart__btn">
                     <svg class="icon-cart__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18"
                         height="24">
                         <path
