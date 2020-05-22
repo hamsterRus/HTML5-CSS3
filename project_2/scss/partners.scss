@@ -30,6 +30,17 @@
 
 @media (min-width: 320px) and (max-width: 480px){
     .partners{
-        display: none;
+        &-container{
+            padding: 80px 20px;
+            flex-wrap: wrap;
+        }
+        &__link{
+            width: 45%;
+            margin: 0 0 10px 0;
+        }
+        &__logo{
+            width: 100%;
+            height: auto;
+        }
     }
 }

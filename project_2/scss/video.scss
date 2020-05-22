@@ -7,7 +7,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
-        height: 100%;
+        min-height: 100%;
         box-sizing: border-box;
     }
     &-description{
@@ -70,6 +70,8 @@
 
 @media (min-width: 320px) and (max-width: 480px){
     .video{
-        display: none;
+        &-bg{
+            object-fit: none;
+        }
     }
 }
