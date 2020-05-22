@@ -7,11 +7,14 @@
         width: 100%;
         margin: 0;
         padding: 0;
+        height: 100%;
+        box-sizing: border-box;
     }
     &-description{
         position: absolute;
-        top: 210px;
-        left: 677px;
+        top: 30%;
+        left: 35%;
+        right: 35%;
         display: flex;
         flex-direction: column;
         align-items:center;
@@ -37,6 +40,7 @@
             margin: 0 auto;
         }
         &__title{
+            text-align: center;
             display: block;
             font-family: raleway;
             font-size: 30px;
@@ -61,5 +65,11 @@
             color: #c7b299;
             margin: 0;
         }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .video{
+        display: none;
     }
 }

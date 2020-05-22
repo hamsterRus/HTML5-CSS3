@@ -42,3 +42,77 @@
     font-weight: 700;
     color: $colorWhite
 }
+
+@mixin checkbox{
+    &-hamburger {
+        margin: 0 auto;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        &__bar {
+            padding: 0;
+            width: 30px;
+            height: 4px;
+            background-color: $colorWhite;
+            display: block;
+            border-radius: 4px;
+            transition: all 0.4s ease-in-out;
+            position: absolute; 
+        }
+        &--bar1 {
+            top: 0;
+            transform-origin: 5%;
+        }
+        &--bar2,
+        &--bar3 {
+            top: 13.5px;
+        }
+        &--bar3 {
+            right: 0;
+        }
+        &--bar4 {
+            bottom: 0;
+            transform-origin: 5%;
+        }
+    }
+    
+     
+    &__checkbox:checked + &__label > &-hamburger > &-hamburger--bar1{
+        transform: rotate(45deg);
+        height: 3px;
+        width: 42px;
+    }
+    
+    &__checkbox:checked + &__label > &-hamburger > &-hamburger--bar3{
+        transform: rotate(45deg);
+        height: 3px;
+        background-color: transparent;
+    }
+    
+    &__checkbox:checked + &__label > &-hamburger > &-hamburger--bar2{
+        transform: rotate(-45deg);
+        height: 3px;
+        background-color: transparent;
+    }
+    
+    &__checkbox:checked + &__label > &-hamburger > &-hamburger--bar4{
+        transform: rotate(-45deg);
+        height: 3px;
+        width: 42px;
+    }
+
+    &__label{
+        display: block;
+    }
+
+    &__checkbox:checked ~ &__menu-list{
+        height: auto;
+        visibility: visible;
+        margin-top: 15px;
+        text-align: center;
+
+    }
+
+    
+
+}

@@ -28,10 +28,19 @@
     max-width: 770px;
     }
     &-position{
+        margin: auto 18%;
         height: 482px;
         background-image: url(../img/browser-center.jpg), url(../img/browser-left.jpg), url(../img/browser-right.jpg);
-        background-size: 770px auto,770px auto,770px auto;
-        background-position: 576px, 346px 82px, 806px 82px ;
+        background-size:  auto;
+        background-position: center, left  82px, right 82px ;
         background-repeat: no-repeat, no-repeat,no-repeat;
+        background-position-y: bottom;
+        
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .ideas{
+        display: none;
     }
 }
