@@ -68,6 +68,32 @@
 
 @media (min-width: 320px) and (max-width: 480px){
     .mobile-devices{
-        display: none;
+        &-container{
+            padding: 30px 20px;
+            background-position: left bottom;
+            background-size: 46%;
+        }
+        &__title{
+            margin: 0;
+            width: 100%;
+            display: block;
+            font-size: 28px;
+        }
+        &__txt{
+            display: block;
+            width: 100%;
+            font-size: 14px;
+            margin: 17px 0;
+        }
+        &-features{
+            width: 50%;
+            margin: 0px 0 30% 0;
+            &__item{
+                font-size: 10px;
+                &::after{
+                    left: -40px;
+                }
+            }
+        }
     }
 }

@@ -168,6 +168,30 @@
 
 @media (min-width: 320px) and (max-width: 480px){
     .posts{
-        display: none;
+        &-container{
+            padding: 30px 20px 0;
+        }
+        &__title{
+            font-size: 28px;
+        }
+        &__subtitle{
+            font-size: 14px;
+        }
+        &-post{
+            padding: 0 30px;
+            &__item{
+                margin: 0 0 10px 0;
+                &:nth-child(2){
+                    margin: 0 0 10px 0;
+                }
+                &-img{
+                    width: 100%;
+                    min-height: 100%;
+                }
+            }
+            &__btn{
+                display: none;
+            }
+        }
     }
 }
