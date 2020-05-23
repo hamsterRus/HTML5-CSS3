@@ -2867,6 +2867,7 @@ body {
     background-position: left bottom;
     background-size: 50% auto; }
   .mobile-devices__title {
+    text-align: center;
     margin: 0;
     width: 100%;
     display: block;
