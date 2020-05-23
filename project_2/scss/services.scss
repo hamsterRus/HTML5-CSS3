@@ -88,23 +88,3 @@
     
 }
 
-@media (min-width: 320px) and (max-width: 480px){
-    .services{
-        flex-wrap: wrap;
-        padding: 20px 20px 0;
-        &-item{
-            margin: 0 0 30px 0;
-            max-width: 45%;
-            &__title{
-                font-size: 19px;
-                text-align: center;
-            }
-            &__subtitle{
-                font-size: 12px;
-            }
-            &:nth-child(4){
-                margin: 0 0 30px;
-            }
-        }
-    }
-}
