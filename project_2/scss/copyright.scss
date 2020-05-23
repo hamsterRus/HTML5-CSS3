@@ -64,5 +64,12 @@
         &__text{
             font-size: 10px;
         }
+        &__link{
+            font-size: 10px;
+            &--grey{
+                margin-left: 5px;
+                padding-left: 5px;
+            }
+        }
     }
 }

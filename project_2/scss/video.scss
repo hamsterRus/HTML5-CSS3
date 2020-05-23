@@ -73,5 +73,16 @@
         &-bg{
             object-fit: none;
         }
+        &-description{
+            left: 0;
+            right: 0;
+            margin: 20px;
+            &__title{
+                font-size: 26px;
+            }
+            &__subtitle{
+                font-size: 13px;
+            }
+        }
     }
 }
