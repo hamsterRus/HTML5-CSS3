@@ -51,18 +51,3 @@
 }
 
 
-@media (min-width: 320px) and (max-width: 480px){
-    .footer-copyright{
-        &-container{
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 39px 20px;
-        }
-        &__grup-left{
-            margin-bottom: 30px;
-        }
-        &__text{
-            font-size: 10px;
-        }
-    }
-}
