@@ -43,6 +43,7 @@
     color: $colorWhite
 }
 
+
 @mixin checkbox{
     &-hamburger {
         margin: 0 auto;
@@ -106,13 +107,12 @@
     }
 
     &__checkbox:checked ~ &__menu-list{
+        width: 100%;
         height: auto;
+        text-align: center;
         visibility: visible;
         margin-top: 15px;
-        text-align: center;
+        transition: all 1s ;
 
     }
-
-    
-
 }
