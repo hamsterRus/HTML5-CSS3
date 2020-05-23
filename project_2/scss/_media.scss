@@ -4,7 +4,7 @@
 
 
 
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 420px) and (max-width: 576px){
 
     .header{
         padding: 40px 30px;
@@ -108,8 +108,9 @@
     .mobile-devices{
         &-container{
             padding: 30px 20px;
-            background-position: left bottom;
-            background-size: 50% auto;
+            background-position: left 20px bottom;
+            background-size: 46% auto;
+            background-origin: border-box;
         }
         &__title{
             text-align: center;
@@ -125,8 +126,7 @@
             margin: 17px 0;
         }
         &-features{
-            width: 50%;
-            margin: 0px 0 30% 0;
+            width: 46%;
             &__item{
                 font-size: 10px;
                 &::after{
